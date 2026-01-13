@@ -21,7 +21,7 @@ $categories = Categorie::listerCategorie();
 </head>
 <body class="font-sans">
     <!-- Header -->
-        <?php require_once 'Components/header.php';?>
+        <?php require_once '../app/Views/layouts/header.php';?>
 
     <!-- Hero Section -->
     <section class="relative py-40 overflow-hidden">
@@ -83,10 +83,10 @@ $categories = Categorie::listerCategorie();
             <div class="flex flex-wrap justify-center items-center gap-12 opacity-60">
                 <img src="https://logos-world.net/wp-content/uploads/2021/03/Honda-Logo.png" alt="Honda" class="h-8 grayscale">
                 <img src="https://logos-world.net/wp-content/uploads/2021/04/Jaguar-Logo.png" alt="Jaguar" class="h-8 grayscale">
-                <img src="Assets/logos/nissan.png" alt="Nissan" class="h-8 grayscale">
+                <img src="../app/Views/assets/nissan.png" alt="Nissan" class="h-8 grayscale">
                 <img src="https://logos-world.net/wp-content/uploads/2021/03/Volvo-Logo.png" alt="Volvo" class="h-8 grayscale">
-                <img src="Assets/logos/audi.png" alt="Audi" class="h-8 grayscale">
-                <img src="Assets/logos/Alfa-Romeo-logo.png" alt="Alfa Romeo" class="h-8 grayscale">
+                <img src="../app/Views/assets/audi.png" alt="Audi" class="h-8 grayscale">
+                <img src="../app/Views/assets/Alfa-Romeo-logo.png" alt="Alfa Romeo" class="h-8 grayscale">
             </div>
         </div>
     </section>
@@ -211,12 +211,12 @@ $categories = Categorie::listerCategorie();
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Découvrez nos différentes implantations au Maroc</h2>
             <div class="max-w-2xl mx-auto">
-                <img src="Assets/logos/Carte_du_Maroc.png" alt="Carte du Maroc" class="w-full h-auto">
+                <img src="../app/Views/assets/Carte_du_Maroc.png" alt="Carte du Maroc" class="w-full h-auto">
             </div>
         </div>
     </section>
 
-    <?php require_once 'Components/footer.php';?>
+    <?php require_once '../app/Views/layouts/footer.php';?>
     
 </body>
 </html>
