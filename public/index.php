@@ -20,5 +20,6 @@ $router->add('/register_post', AuthController::class, 'register');
 $router->add('/logout', AuthController::class, 'logout');
 
 $requestUri = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
-$router->run($requestUri);
+$router->run($requestUri); 
+
 
