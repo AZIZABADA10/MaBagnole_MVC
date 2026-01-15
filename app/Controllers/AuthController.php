@@ -30,7 +30,7 @@ class AuthController extends Controller
         $role = $_SESSION['user']['role'];
 
         if ($role === 'admin') {
-            header("Location:" . BASE_URL . "/admin");
+            header("Location:" . BASE_URL . "/admin/dashboard");
         } else {
             header("Location:". BASE_URL . "/vehicles");
         }
