@@ -5,7 +5,7 @@
     <title>Inscription | MaBagnole</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="/assets/logos/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../app/Views/assets/logo.png" type="image/x-icon">
 </head>
 
 <body class="min-h-screen bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 flex items-center justify-center">
@@ -13,7 +13,7 @@
 <div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-8">
 
     <div class="text-center mb-6">
-        <img src="/assets/logos/logo.png" class="mx-auto h-14 mb-2">
+        <img src="../app/Views/assets/logo.png" class="mx-auto h-14 mb-2">
         <h1 class="text-2xl font-bold text-blue-600">Créer un compte</h1>
         <p class="text-gray-500 text-sm">Rejoignez MaBagnole</p>
     </div>
@@ -25,7 +25,7 @@
         </div>
     <?php endif; ?>
 
-    <form method="POST" action="/register" class="space-y-5">
+    <form method="POST" action="<?= BASE_URL ?>/register_post" class="space-y-5">
         <div>
             <label>Nom complet</label>
             <input name="nom" required class="w-full p-2 border rounded">
@@ -47,7 +47,7 @@
     </form>
 
     <div class="text-center mt-4">
-        <a href="/login" class="text-blue-600">Déjà un compte ?</a>
+        <a href="<?= BASE_URL ?>/login" class="text-blue-600">Déjà un compte ?</a>
     </div>
 
 </div>
