@@ -30,9 +30,9 @@ class AuthController extends Controller
         $role = $_SESSION['user']['role'];
 
         if ($role === 'admin') {
-            header("Location: /admin");
+            header("Location:" . BASE_URL . "/admin");
         } else {
-            header("Location: /vehicles");
+            header("Location:". BASE_URL . "/vehicles");
         }
         exit;
     }
@@ -53,14 +53,14 @@ class AuthController extends Controller
             return;
         }
 
-        header("Location: /login");
+        header("Location:". BASE_URL ."/login");
         exit;
     }
 
     public function logout()
     {
         Utilisateur::logout();
-        header("Location: /login");
+        header("Location:". BASE_URL ."/login");
         exit;
     }
 }
