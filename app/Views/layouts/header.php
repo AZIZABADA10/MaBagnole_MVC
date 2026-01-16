@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <!-- LEFT -->
         <div class="flex items-center space-x-8">
             <a href="<?= BASE_URL ?>" class="text-2xl font-bold text-blue-600">
-                <img src="../public/assets/logo.png" alt="logo mabagnole" class="w-22 h-16">
+                <img src="<?= BASE_URL ?>/assets/logo.png" alt="logo" class="w-22 h-16">
             </a>
 
             <div class="hidden md:flex space-x-6">
@@ -25,7 +25,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
                 <!-- ADMIN -->
                 <?php if ($_SESSION['user']['role'] === 'admin'): ?>
-                    <a href="<?= BASE_URL ?>/dashboard"
+                    <a href="<?= BASE_URL ?>/admin/dashboard"
                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
                         Dashboard
                     </a>
