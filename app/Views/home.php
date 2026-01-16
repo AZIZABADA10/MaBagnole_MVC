@@ -193,7 +193,7 @@
             </div>
 
             <div class="text-center mt-8">
-                <a href="<?= BASE_URL ?>/vehicles" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
+                <a href="<?= BASE_URL ?>/vehicules/nos_voitures" class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition">
                     Afficher tous les véhicules
                 </a>
             </div>
