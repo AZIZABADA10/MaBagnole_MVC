@@ -4,7 +4,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold mb-4">
-                       <img src="../app/Views/assets/logo.png" alt="logo mabagnole" class="w-22 h-16"></i>
+                       <img src="../public/assets/logo.png" alt="logo mabagnole" class="w-22 h-16"></i>
                     </h3>
                     <p class="text-gray-400 text-sm">Location de voitures simple et abordable au Maroc</p>
                 </div>
