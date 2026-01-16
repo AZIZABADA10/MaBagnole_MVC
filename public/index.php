@@ -9,6 +9,8 @@ use App\Controllers\AuthController;
 use App\Controllers\HomeController;
 use App\Controllers\AdminController;
 use App\Controllers\VehiculeController;
+use App\Controllers\CategorieController;
+
 
 
 session_start();
@@ -25,18 +27,22 @@ $router->add('/vehicules/nos_voitures', VehiculeController::class, 'nosVoitures'
 
 $router->add('/admin/dashboard', AdminController::class, 'dashboard');
 $router->add('/admin/vehicles', AdminController::class, 'vehicles');
-$router->add('/admin/categories', AdminController::class, 'categories');
-$router->add('/admin/reservations', AdminController::class, 'reservations');
+$router->add('/admin/categories', CategorieController::class, 'index');
+
 $router->add('/admin/reviews', AdminController::class, 'reviews');
 $router->add('/admin/vehicule/ajouter', AdminController::class, 'ajouterVehicule');
 $router->add('/admin/vehicule/modifier', AdminController::class, 'modifierVehicule');
 $router->add('/admin/vehicule/supprimer/{id}', AdminController::class, 'supprimerVehicule');
 $router->add('/admin/vehicule/supprimer', AdminController::class, 'supprimerVehicule');
 
+$router->add('/admin/categorie/ajouter', CategorieController::class, 'ajouter');
+$router->add('/admin/categorie/modifier', CategorieController::class, 'modifier');
+$router->add('/admin/categorie/supprimer', CategorieController::class, 'supprimer');
 
 
 
 $requestUri = str_replace(BASE_URL, '', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 $router->run($requestUri); 
+
 
 
