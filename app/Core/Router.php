@@ -13,15 +13,27 @@ class Router
     public function run($url)
     {
         if (isset($this->routes[$url])) {
+
             $controllerName = $this->routes[$url]['controller'];
             $action = $this->routes[$url]['action'];
 
+            if (!class_exists($controllerName)) {
+                die("Controller introuvable : " . $controllerName);
+            }
+
             $controller = new $controllerName();
+
+            if (!method_exists($controller, $action)) {
+                die("Méthode introuvable : " . $action);
+            }
+
             $controller->$action();
+
         } else {
-            http_response_code(404);
-            echo "404 - Page non trouvée";
+
+            echo "Page non trouvée";
         }
     }
+
 
 }
