@@ -24,13 +24,19 @@ $router->add('/logout', AuthController::class, 'logout');
 $router->add('/vehicules/nos_voitures', VehiculeController::class, 'nosVoitures');
 
 $router->add('/admin/dashboard', AdminController::class, 'dashboard');
-$router->add('/vehicles',AdminController::class,'vehicles');
-$router->add('/categories',AdminController::class,'categories');
-$router->add('/reservations', AdminController::class, 'reservations');
-$router->add('/reviews', AdminController::class, 'reviews');
+$router->add('/admin/vehicles', AdminController::class, 'vehicles');
+$router->add('/admin/categories', AdminController::class, 'categories');
+$router->add('/admin/reservations', AdminController::class, 'reservations');
+$router->add('/admin/reviews', AdminController::class, 'reviews');
+$router->add('/admin/vehicule/ajouter', AdminController::class, 'ajouterVehicule');
+$router->add('/admin/vehicule/modifier', AdminController::class, 'modifierVehicule');
+$router->add('/admin/vehicule/supprimer/{id}', AdminController::class, 'supprimerVehicule');
+$router->add('/admin/vehicule/supprimer', AdminController::class, 'supprimerVehicule');
 
 
-$requestUri = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
+
+
+$requestUri = str_replace(BASE_URL, '', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 $router->run($requestUri); 
 
 
