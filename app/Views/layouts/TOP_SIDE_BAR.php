@@ -36,7 +36,9 @@
 <aside class="w-64 bg-[#0F172A] text-white hidden md:flex flex-col">
   <!-- Logo -->
   <div class="p-5 text-2xl font-bold text-center border-b border-gray-700 flex items-center justify-center gap-2">
-    <img src="<?= BASE_URL ?>/assets/logo.png" class="w-14 h-12">
+    <a href="<?= BASE_URL ?>" class="text-2xl font-bold text-blue-600">
+                <img src="<?= BASE_URL ?>/assets/logo.png" alt="logo" class="w-20 h-16">
+            </a>
     
     <span>Ma<span class="text-[#2563EB]">Bagnole</span></span>
   </div>
