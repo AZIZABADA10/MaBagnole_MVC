@@ -57,4 +57,18 @@ class Categorie
             ->query("SELECT * FROM categorie ORDER BY titre")
             ->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public static function estUtilisee(): bool
+    {
+        $db = self::getDB();
+
+        $sql = "SELECT COUNT(*) FROM vehicules WHERE id_categorie = :id";
+        $stmt = $db->prepare($sql);
+        $stmt->execute([
+            ':id' => $this->id
+        ]);
+
+        return $stmt->fetchColumn() > 0;
+    }
+
 }
