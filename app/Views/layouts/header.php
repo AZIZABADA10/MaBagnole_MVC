@@ -8,12 +8,12 @@ if (session_status() === PHP_SESSION_NONE) {
 
         <!-- LEFT -->
         <div class="flex items-center space-x-8">
-            <a href="index.php" class="text-2xl font-bold text-blue-600">
-                <img src="../app/Views/assets/logo.png" alt="logo mabagnole" class="w-22 h-16">
+            <a href="<?= BASE_URL ?>" class="text-2xl font-bold text-blue-600">
+                <img src="../public/assets/logo.png" alt="logo mabagnole" class="w-22 h-16">
             </a>
 
             <div class="hidden md:flex space-x-6">
-                <a href="index.php" class="text-gray-700 hover:text-blue-600">Accueil</a>
+                <a href="<?= BASE_URL ?>" class="text-gray-700 hover:text-blue-600">Accueil</a>
                 <a href="<?= BASE_URL ?>/vehicules/nos_voitures" class="text-gray-700 hover:text-blue-600">Nos voitures</a>
             </div>
         </div>
