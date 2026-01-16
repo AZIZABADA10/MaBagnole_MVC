@@ -14,7 +14,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
             <div class="hidden md:flex space-x-6">
                 <a href="index.php" class="text-gray-700 hover:text-blue-600">Accueil</a>
-                <a href="<?= BASE_URL ?>/nos_voitures" class="text-gray-700 hover:text-blue-600">Nos voitures</a>
+                <a href="<?= BASE_URL ?>/vehicules/nos_voitures" class="text-gray-700 hover:text-blue-600">Nos voitures</a>
             </div>
         </div>
 
