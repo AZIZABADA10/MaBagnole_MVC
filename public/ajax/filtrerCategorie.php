@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
-use App\Classes\Vehicule;
+use App\Models\Vehicule;
 
 $id = $_GET['id'] ?? 0;
 
