@@ -48,26 +48,26 @@
         <span>Dashboard</span>
     </a>
 
-    <a href="<?= BASE_URL ?>/vehicles" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
+    <a href="<?= BASE_URL ?>/admin/vehicles" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
         <i class='bx bxs-car text-xl'></i>
         <span>Véhicules</span>
     </a>
 
-    <a href="<?= BASE_URL ?>/categories" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
+    <a href="<?= BASE_URL ?>/admin/categories" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
         <i class='bx bx-category text-xl'></i>
         <span>Catégories</span>
     </a>
 
-    <a href="<?= BASE_URL ?>/reservations" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
+    <a href="<?= BASE_URL ?>/admin/reservations" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
         <i class='bx bx-calendar-check text-xl'></i>
         <span>Réservations</span>
     </a>
 
-    <a href="<?= BASE_URL ?>/reviews" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
+    <a href="<?= BASE_URL ?>/admin/reviews" class="flex items-center gap-3 p-2 rounded hover:bg-[#1E293B]">
         <i class='bx bxs-star text-xl'></i>
         <span>Avis</span>
     </a>
-    <a href="<?= BASE_URL ?>/logout"
+    <a href="<?= BASE_URL ?>/admin/logout"
     class="flex items-center gap-2 px-4 py-2 mt-40 bg-red-600 text-white rounded-lg hover:bg-red-700 transition">
         <i class='bx bx-log-out text-lg'></i>
         <span>Déconnexion</span>
