@@ -78,11 +78,11 @@ class Vehicule
 
 
 
-    public function supprimer(): bool
+    public static function supprimerVehicule(int $id): bool
     {
         $sql = "DELETE FROM vehicule WHERE id_vehicule = :id";
         return Database::getInstance()->getConnexion()->prepare($sql)
-            ->execute([':id' => $this->id_vehicule]);
+            ->execute([':id' => $id]);
     }
 
     public static function listerVehicule(int $limit, int $offset): array
